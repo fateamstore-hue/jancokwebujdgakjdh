@@ -686,6 +686,38 @@ footer{border-top:1px solid rgba(148,163,184,.14)!important;color:#8491a5}
 .community-choice small{display:block;color:#a9b2c3;font-size:11px;font-weight:500;margin-top:3px}
 @media(max-width:480px){.community-float-wrap{right:12px;bottom:12px}.community-float-trigger{padding:12px 15px}.community-float-panel{width:min(280px,calc(100vw - 24px))}}
 </style>
+
+<style id="fa-mobile-animation-and-shield-fix">
+/* Mobile: keep the animated ambient background visible and add direct access to Shield DDoS. */
+@keyframes faMobileBgDrift {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 45%; }
+  100% { background-position: 20% 100%; }
+}
+@media (max-width: 700px) {
+  html {
+    background-color: #0a0e17 !important;
+    background-image:
+      radial-gradient(ellipse at 15% 18%, rgba(245,189,24,.16), transparent 42%),
+      radial-gradient(ellipse at 85% 72%, rgba(59,130,246,.14), transparent 44%),
+      linear-gradient(135deg, #0a0e17, #101725, #0a0e17) !important;
+    background-size: 190% 190% !important;
+    animation: faMobileBgDrift 18s ease-in-out infinite alternate !important;
+  }
+  #fa-particle-bg { opacity: .9 !important; }
+  .nav-shield-link { color: #f5bd18 !important; }
+  .main-nav .nav-shield-link, nav .nav-shield-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .nav-shield-link::before { content: "⬡"; font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { animation: none !important; }
+}
+</style>
+
 </head>
 <body>
 <canvas id="fa-particle-bg" aria-hidden="true"></canvas>
@@ -699,7 +731,7 @@ footer{border-top:1px solid rgba(148,163,184,.14)!important;color:#8491a5}
 </div><button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Navigasi utama">
 <a href="index.html">Home</a>
 <div class="nav-dropdown"><a class="nav-product" href="hosting.html" aria-haspopup="true">Produk <span class="nav-caret">⌄</span></a><div class="nav-dropdown-menu"><a href="hosting.html"><span class="menu-icon">▤</span><span><b>Hosting SA-MP</b><small>Hosting standar &amp; premium</small></span></a><a href="vps.html"><span class="menu-icon">▦</span><span><b>VPS Ryzen &amp; EPYC</b><small>Resource untuk proyekmu</small></span></a><a href="Build%20Server.html"><span class="menu-icon">⌘</span><span><b>Build Server</b><small>Jasa setup dari awal</small></span></a></div></div>
-<a href="fitur.html">Fitur</a><a href="testimoni.html">Testimoni</a><a href="kontak.html">Kontak</a><a href="tos.html">TOS</a>
+<a href="ddos-protection.html">DDoS Protection</a><a href="testimoni.html">Testimoni</a><a href="kontak.html">Kontak</a><a href="tos.html">TOS</a>
 </nav><a href="https://wa.me/6283138977096?text=Halo%20Faqihal%20Store%2C%20saya%20ingin%20order%20layanan." class="btn-nav">Order Sekarang</a></div></header>
 <main>
 <section class="container"><div class="section-header"><h1>Kontak & Pemesanan</h1><p>Butuh hosting SA-MP, VPS, atau jasa Build Server? Hubungi Faqihal Store untuk menanyakan paket yang sesuai.</p></div><div class="service-grid"><div class="service-point"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8 8 0 0 1-3.5-.8L4 20l1.2-3.5A7 7 0 0 1 4 12c0-4.1 3.6-7.5 8-7.5s8 3.1 8 7Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></span><span><strong>WhatsApp Channel</strong><br>Ikuti update dan informasi layanan Faqihal Store.</span></div><div class="service-point"><span class="order-main-sticker" aria-hidden="true">🛍️</span><span><strong>Pemesanan</strong><br>Pilih paket di halaman layanan, lalu tekan tombol order.</span></div><a class="service-point" href="https://discord.gg/j24z23FMy8" target="_blank" rel="noopener noreferrer"><span aria-hidden="true" style="font-size:25px">🎮</span><span><strong>Community Discord</strong><br>Gabung komunitas Faqihal Store untuk diskusi, bantuan, dan update layanan.</span></a><div class="service-point"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 7 3-3 3 3-3 3M13 8l-8 8a2 2 0 0 0 3 3l8-8M4 4l5 5M3 8l5-5"/></svg></span><span><strong>Custom Request</strong><br>Tanyakan kebutuhan server dan konfigurasi khusus.</span></div></div><div class="section-header" style="margin-top:34px"><h2>Stiker Pilihan Pemesanan</h2><p>Pilih layanan yang ingin ditanyakan. Harga dan ketersediaan dikonfirmasi saat pemesanan.</p></div><div class="service-grid order-stickers"><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg></span><span><strong>Hosting SA-MP Standar</strong><br>Paket hosting SA-MP untuk memulai server.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><span><strong>Hosting SA-MP Premium</strong><br>Pilihan premium untuk kebutuhan server yang lebih serius.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h.01M8 15h.01M12 9h4M12 15h4"/></svg></span><span><strong>VPS AMD EPYC</strong><br>VPS dengan prosesor AMD EPYC.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h.01M8 15h.01M12 9h4M12 15h4"/></svg></span><span><strong>VPS AMD Ryzen</strong><br>VPS dengan prosesor AMD Ryzen.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg></span><span><strong>Jasa Buat Server dari 0</strong><br>Setup server dari awal hingga siap dikembangkan.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0"/></svg></span><span><strong>Setup Server</strong><br>Bantuan konfigurasi dasar server.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M4 7h16v10H4z"/></svg></span><span><strong>GameMode SA-MP</strong><br>Pengembangan atau penyesuaian GameMode.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg></span><span><strong>Mapping SA-MP</strong><br>Pembuatan dan penyesuaian map.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8M8 8h8M6 3h12v18H6z"/></svg></span><span><strong>Script / Pawn</strong><br>Bantuan script dan pengembangan Pawn.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-7"/></svg></span><span><strong>Optimasi Server</strong><br>Pemeriksaan dan optimasi konfigurasi server.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9 9 0 0 1-4-.9L3 21l1.4-4A8 8 0 0 1 3 12c0-4.7 4-8.5 9-8.5s9 3.6 9 8z"/></svg></span><span><strong>Konsultasi Teknis</strong><br>Diskusikan kebutuhan sebelum memilih paket.</span></div></div><p style="text-align:center;margin:28px 0;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn-buy" href="https://wa.me/6283138977096?text=Halo%20Faqihal%20Store%2C%20saya%20ingin%20order%20layanan." target="_blank" rel="noopener noreferrer">Buka WhatsApp Channel</a><a class="btn-buy" href="https://discord.gg/j24z23FMy8" target="_blank" rel="noopener noreferrer">Gabung Community Discord</a></p><div class="section-header"><h2>Pertanyaan Umum</h2></div><div class="price-list"><div class="list-item"><div class="item-info"><div class="item-title">Bagaimana cara memesan?</div><div class="item-specs">Pilih layanan dan paket, lalu tekan tombol order untuk menghubungi kami.</div></div></div><div class="list-item"><div class="item-info"><div class="item-title">Apakah bisa request custom?</div><div class="item-specs">Bisa. Hubungi kami untuk membicarakan kebutuhan hosting atau jasa Build Server.</div></div></div><div class="list-item"><div class="item-info"><div class="item-title">Di mana melihat informasi terbaru?</div><div class="item-specs">Ikuti saluran WhatsApp Faqihal Store melalui tombol di halaman ini.</div></div></div></div></section>

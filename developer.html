@@ -708,6 +708,38 @@ footer{border-top:1px solid rgba(148,163,184,.14)!important;color:#8491a5}
 .community-choice small{display:block;color:#a9b2c3;font-size:11px;font-weight:500;margin-top:3px}
 @media(max-width:480px){.community-float-wrap{right:12px;bottom:12px}.community-float-trigger{padding:12px 15px}.community-float-panel{width:min(280px,calc(100vw - 24px))}}
 </style>
+
+<style id="fa-mobile-animation-and-shield-fix">
+/* Mobile: keep the animated ambient background visible and add direct access to Shield DDoS. */
+@keyframes faMobileBgDrift {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 45%; }
+  100% { background-position: 20% 100%; }
+}
+@media (max-width: 700px) {
+  html {
+    background-color: #0a0e17 !important;
+    background-image:
+      radial-gradient(ellipse at 15% 18%, rgba(245,189,24,.16), transparent 42%),
+      radial-gradient(ellipse at 85% 72%, rgba(59,130,246,.14), transparent 44%),
+      linear-gradient(135deg, #0a0e17, #101725, #0a0e17) !important;
+    background-size: 190% 190% !important;
+    animation: faMobileBgDrift 18s ease-in-out infinite alternate !important;
+  }
+  #fa-particle-bg { opacity: .9 !important; }
+  .nav-shield-link { color: #f5bd18 !important; }
+  .main-nav .nav-shield-link, nav .nav-shield-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .nav-shield-link::before { content: "⬡"; font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { animation: none !important; }
+}
+</style>
+
 </head>
 <body>
 <canvas id="fa-particle-bg" aria-hidden="true"></canvas>
@@ -721,7 +753,7 @@ footer{border-top:1px solid rgba(148,163,184,.14)!important;color:#8491a5}
 </div><button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Navigasi utama">
 <a href="index.html">Home</a>
 <div class="nav-dropdown"><a class="nav-product" href="hosting.html" aria-haspopup="true">Produk <span class="nav-caret">⌄</span></a><div class="nav-dropdown-menu"><a href="hosting.html"><span class="menu-icon">▤</span><span><b>Hosting SA-MP</b><small>Hosting standar &amp; premium</small></span></a><a href="vps.html"><span class="menu-icon">▦</span><span><b>VPS Ryzen &amp; EPYC</b><small>Resource untuk proyekmu</small></span></a><a href="Build%20Server.html"><span class="menu-icon">⌘</span><span><b>Build Server</b><small>Jasa setup dari awal</small></span></a></div></div>
-<a href="fitur.html">Fitur</a><a href="testimoni.html">Testimoni</a><a href="kontak.html">Kontak</a><a href="tos.html">TOS</a>
+<a href="ddos-protection.html">DDoS Protection</a><a href="testimoni.html">Testimoni</a><a href="kontak.html">Kontak</a><a href="tos.html">TOS</a>
 </nav><a href="https://wa.me/6283138977096?text=Halo%20Faqihal%20Store%2C%20saya%20ingin%20order%20layanan." class="btn-nav">Order Sekarang</a></div></header>
 <main>
 <section class="build-showcase" aria-labelledby="showcase-title">
