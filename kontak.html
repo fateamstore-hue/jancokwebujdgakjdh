@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kontak &amp; Pemesanan | Faqihal Store</title>
+<meta content="Hubungi Faqihal Store untuk pemesanan hosting SA-MP, VPS, dan jasa Build Server." name="description"/>
+<meta content="Faqihal Store, hosting SA-MP, hosting SAMP Indonesia, VPS Ryzen, VPS EPYC, jasa Build Server SA-MP, jasa build server roleplay, mapping SA-MP, GameMode SA-MP" name="keywords"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="#0a0e17" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="Faqihal Store" property="og:site_name"/>
+<meta content="Faqihal Store | Hosting SA-MP, VPS &amp; Jasa Build Server" property="og:title"/>
+<meta content="Hosting SA-MP, VPS Ryzen &amp; EPYC, build server roleplay, mapping, GameMode, dan setup server. Temukan layanan Faqihal Store." property="og:description"/>
+<meta content="summary" name="twitter:card"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Faqihal Store",
+    "description": "Layanan hosting SA-MP, VPS, jasa Build Server, mapping, build server, dan setup server roleplay.",
+    "sameAs": ["https://wa.me/6283138977096?text=Halo%20Faqihal%20Store%2C%20saya%20ingin%20order%20layanan."]
+  }
+  </script>
+<style>
+    :root {
+      --bg-main: #0a0e17;
+      --bg-card: #121824;
+      --bg-card-hover: #1a2234;
+      --border: #1e293b;
+      --accent: #f5bd18;
+      --accent-glow: rgba(245, 189, 24, 0.2);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --green: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .fa-sticker{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:34px;height:34px;margin-right:10px;position:relative;vertical-align:middle;border:1px solid rgba(245,189,24,.55);border-radius:11px;background:linear-gradient(145deg,#222b39 0%,#101722 58%,#090d14 100%);color:#f5bd18;box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 5px 16px rgba(0,0,0,.24),0 0 18px rgba(245,189,24,.09)}.fa-sticker:after{content:"";position:absolute;right:4px;top:4px;width:4px;height:4px;border-radius:50%;background:#f5bd18;box-shadow:0 0 7px rgba(245,189,24,.8)}.fa-sticker svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    .service-fa{display:inline-flex!important;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--accent);border-radius:13px;background:rgba(245,189,24,.10);color:var(--accent);font-size:15px;font-weight:900;letter-spacing:-1px;box-shadow:0 0 18px rgba(245,189,24,.10)}
+    /* Announcement Bar */
+    .announcement {
+      background: linear-gradient(90deg, #d69e00, #f5bd18);
+      color: #000;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    /* Header / Navbar */
+    header {
+      background: rgba(10, 14, 23, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-wrapper {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-logo img {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+
+    .logo-text span {
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .btn-nav {
+      background: var(--accent);
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+
+    .btn-nav:hover {
+      box-shadow: 0 0 15px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 20px 50px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, var(--accent-glow) 0%, transparent 60%);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--green);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--green);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 4.5vw, 48px);
+      font-weight: 900;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 14px;
+    }
+
+    /* Container General */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto 70px;
+      padding: 0 20px;
+    }
+
+    .section-header {
+      margin-bottom: 24px;
+    }
+
+    .section-header h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+
+    /* Daftar layanan pembuatan server */
+    .service-description {
+      margin-top: 18px;
+      padding: 20px;
+      background: linear-gradient(135deg, rgba(245, 189, 24, 0.08), var(--bg-card));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .service-description h3 {
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: var(--accent);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .service-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.035);
+      color: var(--text-main);
+      font-size: 13px;
+    }
+
+    .service-point span:first-child { flex-shrink: 0; }
+
+    @media (max-width: 520px) {
+      .service-grid { grid-template-columns: 1fr; }
+    }
+
+    /* LIST / LIS PRICING STYLE */
+    .price-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .list-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      transition: all 0.25s ease;
+    }
+
+    .list-item:hover {
+      border-color: var(--accent);
+      background: var(--bg-card-hover);
+      transform: translateX(4px);
+    }
+
+    .list-item.featured {
+      border: 2px solid var(--accent);
+      background: linear-gradient(90deg, rgba(245, 189, 24, 0.05) 0%, var(--bg-card) 100%);
+    }
+
+    .item-info {
+      flex: 1;
+    }
+
+    .item-title {
+      font-size: 17px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .badge-populer {
+      background: var(--accent);
+      color: #000;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
+    }
+
+    .item-specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .spec-tag {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .item-price {
+      text-align: right;
+    }
+
+    .price-amount {
+      font-size: 21px;
+      font-weight: 900;
+      color: var(--accent);
+    }
+
+    .price-period {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .btn-buy {
+      background: var(--accent);
+      color: #000;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .btn-buy:hover {
+      background: #ffcc00;
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      background: #06090f;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Floating Community Menu */
+    .community-float-wrap{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;font-family:inherit}
+    .community-float-trigger{appearance:none;border:0;cursor:pointer;background:linear-gradient(135deg,#f5c518,#ffdf58);color:#111;padding:13px 19px;border-radius:999px;font-weight:800;font-size:13px;box-shadow:0 10px 28px rgba(245,197,24,.28);display:flex;align-items:center;gap:9px}
+    .community-float-trigger:hover{filter:brightness(1.06)}
+    .community-float-panel{display:none;width:min(290px,calc(100vw - 40px));padding:14px;border:1px solid rgba(245,197,24,.25);border-radius:17px;background:rgba(12,16,25,.97);box-shadow:0 18px 48px rgba(0,0,0,.45);backdrop-filter:blur(14px)}
+    .community-float-panel.is-open{display:block}
+    .community-float-title{color:#fff;font-weight:800;font-size:14px;margin:2px 4px 10px}
+    .community-choice{display:flex;align-items:center;gap:11px;text-decoration:none;color:#fff;padding:12px;border-radius:12px;font-size:13px;font-weight:750;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.035);margin-top:8px}
+    .community-choice:hover{background:rgba(255,255,255,.08);border-color:rgba(245,197,24,.3)}
+    .community-choice-icon{width:35px;height:35px;border-radius:10px;display:grid;place-items:center;font-size:18px;flex:0 0 35px}
+    .community-choice-icon.wa{background:#25d366;color:#fff}.community-choice-icon.dc{background:#5865f2;color:#fff}
+    .community-choice small{display:block;color:#a9b2c3;font-size:11px;font-weight:500;margin-top:3px}
+    @media(max-width:480px){.community-float-wrap{right:12px;bottom:12px}.community-float-trigger{padding:12px 15px}.community-float-panel{width:min(280px,calc(100vw - 24px))}}
+
+
+    /* SA-MP Standard Features */
+    .samp-features {
+      margin-top: 16px;
+      padding: 18px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .samp-features span {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .samp-features strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      .list-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .item-price {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid var(--border);
+      }
+      nav { display: none; }
+    }
+
+
+    /* Premium visual refresh */
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      background:
+        radial-gradient(ellipse at 12% 8%, rgba(245,189,24,.075), transparent 32%),
+        radial-gradient(ellipse at 90% 42%, rgba(16,185,129,.045), transparent 28%),
+        var(--bg-main);
+      letter-spacing: .01em;
+    }
+    ::selection { background: rgba(245,189,24,.32); color: #fff; }
+    header { box-shadow: 0 8px 30px rgba(0,0,0,.18); }
+    .nav-container { min-height: 72px; }
+    .brand-logo { gap: 13px; }
+    .brand-logo img { height: 42px; filter: drop-shadow(0 0 10px rgba(245,189,24,.12)); }
+    .logo-text { letter-spacing: .3px; }
+    nav a { padding: 8px 0; position: relative; }
+    nav a::after { content: ""; position: absolute; left: 0; bottom: 1px; height: 2px; width: 0; background: var(--accent); transition: width .2s ease; }
+    nav a:hover::after { width: 100%; }
+    .btn-nav, .btn-buy, .wa-float { box-shadow: 0 7px 20px rgba(245,189,24,.13); }
+    .btn-nav { border: 1px solid rgba(255,255,255,.15); }
+    .hero { padding: 86px 20px 66px; position: relative; overflow: hidden; }
+    .hero::before { content: ""; position: absolute; width: 360px; height: 360px; border: 1px solid rgba(245,189,24,.08); border-radius: 50%; top: -210px; left: calc(50% - 180px); pointer-events: none; }
+    .status-badge { box-shadow: 0 0 26px rgba(16,185,129,.08); }
+    .hero h1 { letter-spacing: -1.4px; text-wrap: balance; }
+    .hero p { font-size: 15px; line-height: 1.85; }
+    .hero-actions { display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top: 26px; }
+    .hero-action { display:inline-flex; justify-content:center; align-items:center; gap:8px; padding:12px 20px; border-radius:10px; font-size:13px; font-weight:800; transition:transform .2s, box-shadow .2s, background .2s; }
+    .hero-action.primary { background:var(--accent); color:#111; box-shadow:0 8px 24px rgba(245,189,24,.18); }
+    .hero-action.secondary { border:1px solid #334155; color:#f8fafc; background:rgba(255,255,255,.035); }
+    .hero-action:hover { transform:translateY(-2px); box-shadow:0 10px 28px rgba(0,0,0,.24); }
+    .container { margin-top: 48px; margin-bottom: 76px; }
+    .section-header h2 { letter-spacing:-.5px; }
+    .section-header p { line-height:1.75; }
+    .samp-features, .service-description { box-shadow:0 16px 40px rgba(0,0,0,.12); }
+    .samp-features span { line-height:1.65; }
+    .list-item { position:relative; overflow:hidden; box-shadow:0 12px 30px rgba(0,0,0,.12); }
+    .list-item::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:transparent; transition:background .2s; }
+    .list-item:hover::before, .list-item.featured::before { background:var(--accent); }
+    .list-item.featured { box-shadow:0 14px 36px rgba(245,189,24,.07); }
+    .item-title { line-height:1.45; }
+    .spec-tag { line-height:1.6; }
+    .price-amount { letter-spacing:-.4px; }
+    .btn-buy { display:inline-flex; justify-content:center; align-items:center; }
+    .service-point { border:1px solid rgba(255,255,255,.035); transition:transform .2s, border-color .2s; }
+    .service-point:hover { transform:translateY(-2px); border-color:rgba(245,189,24,.25); }
+    footer { line-height:1.8; }
+    .wa-float { border:1px solid rgba(255,255,255,.25); box-shadow:0 12px 28px rgba(37,211,102,.22); }
+    :focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+    @media (max-width:768px) {
+      .nav-container { padding:12px 16px; gap:12px; flex-wrap:wrap; }
+      .brand-logo img { height:34px; }
+      .logo-text { font-size:16px; }
+      .btn-nav { padding:8px 12px; font-size:12px; }
+      .hero { padding:62px 18px 48px; }
+      .hero h1 { letter-spacing:-.8px; }
+      .container { margin-top:34px; margin-bottom:54px; padding:0 16px; }
+      .section-header h2 { font-size:22px; }
+      .list-item { padding:17px; }
+      .item-price { gap:12px; }
+      .price-amount { font-size:20px; }
+      .wa-float { right:14px; bottom:14px; padding:11px 15px; }
+    }
+    @media (max-width:420px) {
+      .brand-logo { gap:8px; }
+      .brand-logo img { height:30px; }
+      .logo-text { font-size:14px; }
+      .btn-nav { font-size:11px; padding:8px 10px; }
+      .hero-action { width:100%; }
+      .item-price { align-items:flex-start; flex-direction:column; }
+      .btn-buy { width:100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior:auto; }
+      *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
+    }
+  
+/* === Faqihal Store Motion Pack === */
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{overflow-x:hidden;isolation:isolate}
+body:before,body:after{content:"";position:fixed;pointer-events:none;z-index:-1;border-radius:50%;filter:blur(75px);opacity:.12;animation:ambientDrift 16s ease-in-out infinite alternate}
+body:before{width:300px;height:300px;top:12%;left:-180px;background:#f5bd18}
+body:after{width:260px;height:260px;right:-170px;bottom:8%;background:#3b82f6;animation-delay:-7s}
+@keyframes ambientDrift{from{transform:translate3d(0,-15px,0) scale(.92)}to{transform:translate3d(45px,25px,0) scale(1.12)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes softPulse{0%,100%{box-shadow:0 0 0 rgba(245,189,24,0)}50%{box-shadow:0 0 24px rgba(245,189,24,.16)}}
+@keyframes shineSweep{0%{transform:translateX(-150%) skewX(-18deg)}55%,100%{transform:translateX(250%) skewX(-18deg)}}
+@keyframes floatGentle{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.motion-ready .motion-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.motion-ready .motion-reveal.is-visible{opacity:1;transform:translateY(0)}
+.motion-ready .motion-reveal:nth-child(4n+2){transition-delay:.07s}
+.motion-ready .motion-reveal:nth-child(4n+3){transition-delay:.13s}
+.motion-ready .motion-reveal:nth-child(4n+4){transition-delay:.19s}
+.hero,.hero-section,.page-hero{animation:fadeUp .8s cubic-bezier(.2,.7,.2,1) both}
+.brand-logo img{transition:transform .35s ease,filter .35s ease}
+.brand-logo:hover img{transform:translateY(-2px) rotate(-2deg);filter:drop-shadow(0 0 10px rgba(245,189,24,.3))}
+nav a,.nav-links a{position:relative;transition:color .25s ease,background .25s ease}
+nav a:after,.nav-links a:after{content:"";position:absolute;left:10%;right:90%;bottom:-5px;height:2px;border-radius:4px;background:var(--accent,#f5bd18);transition:right .28s ease}
+nav a:hover:after,.nav-links a:hover:after{right:10%}
+button,.btn,.button,.cta,.service-card,.product-card,.feature-card,.testimonial-card,.package-card,.pricing-card,.contact-card,.card{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease,background-color .28s ease}
+.service-card:hover,.product-card:hover,.feature-card:hover,.testimonial-card:hover,.package-card:hover,.pricing-card:hover,.contact-card:hover,.card:hover{transform:translateY(-6px);border-color:rgba(245,189,24,.48);box-shadow:0 18px 40px rgba(0,0,0,.22),0 0 22px rgba(245,189,24,.06)}
+button:hover,.btn:hover,.button:hover,.cta:hover{transform:translateY(-2px);filter:brightness(1.07)}
+button:active,.btn:active,.button:active,.cta:active{transform:translateY(0) scale(.985)}
+.btn,.button,.cta{position:relative;overflow:hidden}
+.btn:before,.button:before,.cta:before{content:"";position:absolute;inset:-30% auto -30% -55%;width:35%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);transform:translateX(-150%) skewX(-18deg)}
+.btn:hover:before,.button:hover:before,.cta:hover:before{animation:shineSweep .85s ease}
+.fa-sticker,.service-fa{transition:transform .3s ease,box-shadow .3s ease}
+*:hover>.fa-sticker,*:hover>.service-fa{transform:translateY(-2px) rotate(-3deg);box-shadow:0 0 22px rgba(245,189,24,.18)}
+img{transition:filter .35s ease}
+img:hover{filter:saturate(1.06)}
+::selection{background:rgba(245,189,24,.3);color:#fff}
+:focus-visible{outline:2px solid var(--accent,#f5bd18);outline-offset:4px}
+@media(max-width:700px){body:before,body:after{opacity:.07}.motion-ready .motion-reveal{transform:translateY(14px)}.service-card:hover,.product-card:hover,.feature-card:hover,.testimonial-card:hover,.package-card:hover,.pricing-card:hover,.contact-card:hover,.card:hover{transform:translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.motion-ready .motion-reveal{opacity:1;transform:none}}
+
+
+/* === Faqihal Store: animated particle background (decorative, non-interactive) === */
+html { background: #0a0e17; }
+body { background: transparent !important; isolation: isolate; }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 15% 20%, rgba(245,189,24,.075), transparent 38%),
+    radial-gradient(ellipse at 82% 72%, rgba(40,115,210,.09), transparent 42%),
+    #0a0e17;
+}
+#fa-particle-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .82;
+}
+@media (prefers-reduced-motion: reduce) {
+  #fa-particle-bg { opacity: .38; }
+}
+
+
+/* Mobile usability improvements */
+.mobile-menu-toggle{display:none;flex:0 0 44px;width:44px;height:44px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid var(--border,#263246);border-radius:12px;background:rgba(255,255,255,.035);color:var(--text-main,#f8fafc);cursor:pointer;touch-action:manipulation}
+.mobile-menu-toggle span{display:block;width:19px;height:2px;border-radius:2px;background:currentColor;transition:transform .2s,opacity .2s}
+.mobile-menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(7px) rotate(45deg)}
+.mobile-menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.mobile-menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:700px){
+  .nav-container,.nav{position:relative;gap:12px;padding:12px 18px!important;flex-wrap:wrap}
+  .brand-logo,.brand{min-width:0;max-width:calc(100% - 62px)}
+  .brand-logo img{max-width:42px;height:36px}
+  .logo-text{font-size:16px;overflow-wrap:anywhere}
+  .mobile-menu-toggle{display:flex;margin-left:auto;order:2}
+  .nav-container>nav,.nav>nav{display:none!important;order:3;width:100%;flex:0 0 100%;margin-top:8px;padding:8px 0 4px;flex-direction:column;align-items:stretch;gap:0!important;background:transparent}
+  .nav-container>nav.mobile-menu-open,.nav>nav.mobile-menu-open{display:flex!important}
+  .nav-container>nav>a,.nav>nav>a,.nav>nav>.nav-dropdown{display:flex;align-items:center;min-height:48px;padding:12px 14px;border-top:1px solid var(--border,#263246);font-size:14px!important;line-height:1.45}
+  .nav>nav>.nav-dropdown{display:block;padding:0}
+  .nav>nav .nav-product{display:flex;align-items:center;min-height:48px;padding:12px 14px}
+  .nav-dropdown-menu{position:static!important;width:100%;display:none;margin:0;padding:4px 10px 10px;box-shadow:none!important;border:0!important;background:rgba(255,255,255,.025)!important}
+  .nav-dropdown:focus-within .nav-dropdown-menu,.nav-dropdown:hover .nav-dropdown-menu{display:block} .nav-dropdown.mobile-dropdown-open .nav-dropdown-menu{display:grid!important;opacity:1!important;visibility:visible!important;transform:none!important}
+  .btn-nav,.order{order:4;margin:0!important;min-height:42px;padding:10px 14px!important;font-size:12px!important;white-space:nowrap}
+  .nav-container>.btn-nav,.nav>.order{margin-left:0!important}
+  .container,.wrap{width:100%;padding-left:18px!important;padding-right:18px!important;margin-top:28px}
+  .hero{padding:48px 18px 36px!important}
+  .hero h1,h1{font-size:clamp(29px,8vw,40px);line-height:1.16;overflow-wrap:anywhere;letter-spacing:-.7px}
+  .hero p,.lead{font-size:14px;line-height:1.75}
+  .section-header h2,.section-title h2{font-size:21px;line-height:1.3}
+  .service-description,.simulator{padding:16px!important}
+  .list-item{padding:16px!important;gap:12px;align-items:flex-start;flex-wrap:wrap}
+  .list-item:hover{transform:none}
+  .item-title{font-size:15px;line-height:1.4;flex-wrap:wrap}
+  .price-list{gap:12px}
+  .hero-actions{gap:10px}
+  .hero-actions .btn,.btn,.order{min-height:44px}
+  p,li{overflow-wrap:break-word}
+  .table-wrap{max-width:100%}
+  footer{padding:22px 18px;line-height:1.7}
+}
+@media(max-width:380px){.nav-container,.nav{padding-left:14px!important;padding-right:14px!important}.container,.wrap{padding-left:14px!important;padding-right:14px!important}.brand-logo{gap:7px}.logo-text{font-size:14px}.btn-nav,.order{font-size:11px!important}}
+
+/* Mobile product dropdown spacing fix */
+@media (max-width: 700px) {
+  .nav-dropdown:not(.mobile-dropdown-open) > .nav-dropdown-menu {
+    display: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    gap: 0 !important;
+    overflow: hidden !important;
+  }
+  .nav-dropdown.mobile-dropdown-open > .nav-dropdown-menu {
+    display: grid !important;
+    gap: 8px !important;
+    padding: 8px 10px 12px !important;
+    height: auto !important;
+    overflow: visible !important;
+    margin: 0 !important;
+  }
+  .nav-dropdown.mobile-dropdown-open > .nav-dropdown-menu > a {
+    display: flex !important;
+    align-items: center;
+    min-height: 64px;
+    padding: 12px 14px !important;
+    margin: 0 !important;
+    border-radius: 12px;
+  }
+}
+</style>
+<style>
+nav a[aria-current="page"]{color:#b6e36b!important}
+nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none}
+.home-links{padding-top:28px;padding-bottom:42px}
+.home-links .service-point{color:inherit;text-decoration:none;min-height:92px}
+main{min-height:65vh}
+@media(max-width:760px){.nav-container{gap:12px;flex-wrap:wrap}.nav-container nav{order:3;width:100%;justify-content:center;gap:12px}.nav-container nav a{font-size:13px}.brand-logo{max-width:65%}.btn-nav{margin-left:auto}}
+</style>
+<style>
+/* Modern minimal service icon stickers */
+.service-point > span:first-child{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;min-width:44px;border:1px solid rgba(245,189,24,.38);border-radius:13px;background:linear-gradient(145deg,rgba(245,189,24,.13),rgba(18,24,36,.96) 70%);color:var(--accent,#f5bd18);font-size:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 5px 16px rgba(0,0,0,.16)}
+.service-point > span:first-child svg,.service-fa svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.service-point:hover > span:first-child{border-color:rgba(245,189,24,.8);box-shadow:0 0 20px rgba(245,189,24,.13)}
+.service-point > span.order-main-sticker:first-child{font-size:23px;line-height:1;background:linear-gradient(145deg,#ffe27a,#f5bd18 58%,#d89400);border:1px solid rgba(255,226,122,.9);box-shadow:inset 0 2px 0 rgba(255,255,255,.5),0 5px 16px rgba(245,189,24,.2);text-shadow:0 1px 1px rgba(0,0,0,.12)}
+.fa-sticker{transition:transform .2s ease,box-shadow .2s ease}
+.fa-sticker:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 7px 20px rgba(0,0,0,.3),0 0 22px rgba(245,189,24,.16)}
+.order-stickers{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:12px}.order-stickers .service-point{min-height:92px;border:1px solid rgba(245,189,24,.12);background:linear-gradient(135deg,rgba(245,189,24,.045),rgba(255,255,255,.025))}@media(max-width:520px){.order-stickers{grid-template-columns:1fr}}
+</style>
+<style id="faqihal-modern-navigation">
+:root{scroll-behavior:smooth}
+header{background:rgba(8,12,20,.88)!important;backdrop-filter:blur(18px)!important;border-bottom:1px solid rgba(148,163,184,.14)!important;box-shadow:0 10px 35px rgba(0,0,0,.12)}
+.nav-container{max-width:1200px!important;min-height:76px;gap:20px!important;padding:12px 24px!important}
+.brand-logo{flex-shrink:0;gap:10px!important}.brand-logo img{height:40px!important}.logo-text{font-size:17px!important;letter-spacing:-.7px}
+.main-nav{display:flex;align-items:center;justify-content:center;gap:5px!important;font-size:13px!important;font-weight:650!important;white-space:nowrap}
+.main-nav>a,.main-nav .nav-product{display:inline-flex;align-items:center;gap:6px;padding:10px 12px;border-radius:10px;color:#aeb8c8!important;transition:background .2s,color .2s}
+.main-nav>a:hover,.main-nav .nav-product:hover,.main-nav>a:focus-visible,.main-nav .nav-product:focus-visible{color:var(--accent)!important;background:rgba(245,189,24,.09);outline:none}
+.nav-dropdown{position:relative;display:flex;align-items:center}.nav-caret{font-size:16px;color:var(--accent);line-height:1;transition:transform .2s}.nav-dropdown:hover .nav-caret,.nav-dropdown:focus-within .nav-caret{transform:rotate(180deg)}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 12px);left:0;width:270px;padding:8px;background:#111824;border:1px solid #2b3547;border-radius:15px;box-shadow:0 22px 60px rgba(0,0,0,.45);display:grid;gap:4px;opacity:0;visibility:hidden;transform:translateY(7px);transition:opacity .18s,transform .18s,visibility .18s;z-index:200}
+.nav-dropdown-menu:before{content:"";position:absolute;left:0;right:0;top:-14px;height:14px}.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.nav-dropdown-menu>a{display:flex;align-items:center;gap:11px;padding:11px;border-radius:10px;color:#eef2f8!important}.nav-dropdown-menu>a:hover{background:rgba(245,189,24,.09)}
+.nav-dropdown-menu b{display:block;font-size:12px;font-weight:800}.nav-dropdown-menu small{display:block;color:#94a3b8;font-size:10px;margin-top:2px}.menu-icon{display:flex;align-items:center;justify-content:center;width:35px;height:35px;flex:0 0 35px;border:1px solid rgba(245,189,24,.28);border-radius:10px;background:rgba(245,189,24,.08);color:var(--accent);font-size:18px}
+.btn-nav{white-space:nowrap;border-radius:10px!important;padding:10px 15px!important;box-shadow:0 5px 18px rgba(245,189,24,.12);flex-shrink:0}
+.hero{isolation:isolate}.hero h1,.section-header h2{letter-spacing:-.8px}.container{max-width:1120px!important}.service-grid{gap:15px!important}.service-point{border:1px solid rgba(148,163,184,.15)!important;border-radius:16px!important;background:linear-gradient(145deg,rgba(18,24,36,.96),rgba(12,17,27,.96))!important;transition:transform .2s,border-color .2s,box-shadow .2s!important}.service-point:hover{transform:translateY(-4px);border-color:rgba(245,189,24,.42)!important;box-shadow:0 18px 36px rgba(0,0,0,.2),0 0 25px rgba(245,189,24,.045)}
+footer{border-top:1px solid rgba(148,163,184,.14)!important;color:#8491a5}
+@media(max-width:1050px){.nav-container{flex-wrap:wrap;justify-content:space-between}.main-nav{order:3;width:100%;justify-content:center;flex-wrap:wrap;padding-top:4px}.nav-dropdown-menu{left:50%;transform:translate(-50%,7px)}.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{transform:translate(-50%,0)}}
+@media(max-width:600px){.nav-container{padding:10px 14px!important;gap:8px!important}.brand-logo img{height:33px!important}.logo-text{font-size:14px!important}.btn-nav{font-size:11px!important;padding:8px 10px!important}.main-nav{gap:2px!important;justify-content:space-between}.main-nav>a,.main-nav .nav-product{padding:8px 9px;font-size:12px}.nav-dropdown-menu{position:fixed;top:125px;left:50%;width:min(290px,calc(100vw - 28px));transform:translate(-50%,7px)}.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{transform:translate(-50%,0)}.container{padding-left:16px!important;padding-right:16px!important}}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
+</style>
+
+
+<style id="order-choice-styles">
+.community-float-wrap{position:fixed;right:22px;bottom:22px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;font-family:inherit}
+.community-float-trigger{appearance:none;border:0;cursor:pointer;background:linear-gradient(135deg,#f5c518,#ffdf58);color:#111;padding:13px 19px;border-radius:999px;font-weight:800;font-size:13px;box-shadow:0 10px 28px rgba(245,197,24,.28);display:flex;align-items:center;gap:9px}
+.community-float-trigger:hover{filter:brightness(1.06)}
+.community-float-panel{display:none;width:min(290px,calc(100vw - 40px));padding:14px;border:1px solid rgba(245,197,24,.25);border-radius:17px;background:rgba(12,16,25,.97);box-shadow:0 18px 48px rgba(0,0,0,.45);backdrop-filter:blur(14px)}
+.community-float-panel.is-open{display:block}
+.community-float-title{color:#fff;font-weight:800;font-size:14px;margin:2px 4px 10px}
+.community-choice{display:flex;align-items:center;gap:11px;text-decoration:none;color:#fff;padding:12px;border-radius:12px;font-size:13px;font-weight:750;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.035);margin-top:8px}
+.community-choice:hover{background:rgba(255,255,255,.08);border-color:rgba(245,197,24,.3)}
+.community-choice-icon{width:35px;height:35px;border-radius:10px;display:grid;place-items:center;font-size:18px;flex:0 0 35px}
+.community-choice-icon.wa{background:#25d366;color:#fff}.community-choice-icon.dc{background:#5865f2;color:#fff}
+.community-choice small{display:block;color:#a9b2c3;font-size:11px;font-weight:500;margin-top:3px}
+@media(max-width:480px){.community-float-wrap{right:12px;bottom:12px}.community-float-trigger{padding:12px 15px}.community-float-panel{width:min(280px,calc(100vw - 24px))}}
+</style>
+</head>
+<body>
+<canvas id="fa-particle-bg" aria-hidden="true"></canvas>
+<div class="announcement">
+    <span class="fa-sticker" aria-label="Faqihal Store server icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3.5" width="16" height="7" rx="2"/><rect x="4" y="13.5" width="16" height="7" rx="2"/><path d="M8 7h.01M8 17h.01M12 7h4M12 17h4"/></svg></span> FAQIHAL STORE — Jasa Layanan Hosting Game, VPS, &amp; Domain Murah Terpercaya
+  </div><header><div class="nav-container"><div class="brand-logo">
+<div class="logo-wrapper">
+<img alt="FAQIHAL STORE Logo" src="data:image/png;base64,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"/>
+</div>
+<div class="logo-text">FAQIHAL <span>STORE</span></div>
+</div><button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Navigasi utama">
+<a href="index.html">Home</a>
+<div class="nav-dropdown"><a class="nav-product" href="hosting.html" aria-haspopup="true">Produk <span class="nav-caret">⌄</span></a><div class="nav-dropdown-menu"><a href="hosting.html"><span class="menu-icon">▤</span><span><b>Hosting SA-MP</b><small>Hosting standar &amp; premium</small></span></a><a href="vps.html"><span class="menu-icon">▦</span><span><b>VPS Ryzen &amp; EPYC</b><small>Resource untuk proyekmu</small></span></a><a href="Build%20Server.html"><span class="menu-icon">⌘</span><span><b>Build Server</b><small>Jasa setup dari awal</small></span></a></div></div>
+<a href="fitur.html">Fitur</a><a href="testimoni.html">Testimoni</a><a href="kontak.html">Kontak</a><a href="tos.html">TOS</a>
+</nav><a href="https://wa.me/6283138977096?text=Halo%20Faqihal%20Store%2C%20saya%20ingin%20order%20layanan." class="btn-nav">Order Sekarang</a></div></header>
+<main>
+<section class="container"><div class="section-header"><h1>Kontak & Pemesanan</h1><p>Butuh hosting SA-MP, VPS, atau jasa Build Server? Hubungi Faqihal Store untuk menanyakan paket yang sesuai.</p></div><div class="service-grid"><div class="service-point"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8 8 0 0 1-3.5-.8L4 20l1.2-3.5A7 7 0 0 1 4 12c0-4.1 3.6-7.5 8-7.5s8 3.1 8 7Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></span><span><strong>WhatsApp Channel</strong><br>Ikuti update dan informasi layanan Faqihal Store.</span></div><div class="service-point"><span class="order-main-sticker" aria-hidden="true">🛍️</span><span><strong>Pemesanan</strong><br>Pilih paket di halaman layanan, lalu tekan tombol order.</span></div><a class="service-point" href="https://discord.gg/j24z23FMy8" target="_blank" rel="noopener noreferrer"><span aria-hidden="true" style="font-size:25px">🎮</span><span><strong>Community Discord</strong><br>Gabung komunitas Faqihal Store untuk diskusi, bantuan, dan update layanan.</span></a><div class="service-point"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 7 3-3 3 3-3 3M13 8l-8 8a2 2 0 0 0 3 3l8-8M4 4l5 5M3 8l5-5"/></svg></span><span><strong>Custom Request</strong><br>Tanyakan kebutuhan server dan konfigurasi khusus.</span></div></div><div class="section-header" style="margin-top:34px"><h2>Stiker Pilihan Pemesanan</h2><p>Pilih layanan yang ingin ditanyakan. Harga dan ketersediaan dikonfirmasi saat pemesanan.</p></div><div class="service-grid order-stickers"><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg></span><span><strong>Hosting SA-MP Standar</strong><br>Paket hosting SA-MP untuk memulai server.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><span><strong>Hosting SA-MP Premium</strong><br>Pilihan premium untuk kebutuhan server yang lebih serius.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h.01M8 15h.01M12 9h4M12 15h4"/></svg></span><span><strong>VPS AMD EPYC</strong><br>VPS dengan prosesor AMD EPYC.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h.01M8 15h.01M12 9h4M12 15h4"/></svg></span><span><strong>VPS AMD Ryzen</strong><br>VPS dengan prosesor AMD Ryzen.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg></span><span><strong>Jasa Buat Server dari 0</strong><br>Setup server dari awal hingga siap dikembangkan.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0"/></svg></span><span><strong>Setup Server</strong><br>Bantuan konfigurasi dasar server.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M4 7h16v10H4z"/></svg></span><span><strong>GameMode SA-MP</strong><br>Pengembangan atau penyesuaian GameMode.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg></span><span><strong>Mapping SA-MP</strong><br>Pembuatan dan penyesuaian map.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8M8 8h8M6 3h12v18H6z"/></svg></span><span><strong>Script / Pawn</strong><br>Bantuan script dan pengembangan Pawn.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-7"/></svg></span><span><strong>Optimasi Server</strong><br>Pemeriksaan dan optimasi konfigurasi server.</span></div><div class="service-point"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9 9 0 0 1-4-.9L3 21l1.4-4A8 8 0 0 1 3 12c0-4.7 4-8.5 9-8.5s9 3.6 9 8z"/></svg></span><span><strong>Konsultasi Teknis</strong><br>Diskusikan kebutuhan sebelum memilih paket.</span></div></div><p style="text-align:center;margin:28px 0;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn-buy" href="https://wa.me/6283138977096?text=Halo%20Faqihal%20Store%2C%20saya%20ingin%20order%20layanan." target="_blank" rel="noopener noreferrer">Buka WhatsApp Channel</a><a class="btn-buy" href="https://discord.gg/j24z23FMy8" target="_blank" rel="noopener noreferrer">Gabung Community Discord</a></p><div class="section-header"><h2>Pertanyaan Umum</h2></div><div class="price-list"><div class="list-item"><div class="item-info"><div class="item-title">Bagaimana cara memesan?</div><div class="item-specs">Pilih layanan dan paket, lalu tekan tombol order untuk menghubungi kami.</div></div></div><div class="list-item"><div class="item-info"><div class="item-title">Apakah bisa request custom?</div><div class="item-specs">Bisa. Hubungi kami untuk membicarakan kebutuhan hosting atau jasa Build Server.</div></div></div><div class="list-item"><div class="item-info"><div class="item-title">Di mana melihat informasi terbaru?</div><div class="item-specs">Ikuti saluran WhatsApp Faqihal Store melalui tombol di halaman ini.</div></div></div></div></section>
+</main>
+<footer>
+<p>© 2026 FAQIHAL STORE. All rights reserved.</p>
+</footer>
+<div class="community-float-wrap">
+  <div class="community-float-panel" id="communityFloatPanel" aria-label="Pilihan pemesanan">
+    <div class="community-float-title">Pilih Metode Order</div>
+    <a class="community-choice" href="https://wa.me/6283138977096?text=Halo%20Faqihal%20Store%2C%20saya%20ingin%20order%20layanan." target="_blank" rel="noopener noreferrer">
+      <span class="community-choice-icon wa">◉</span><span>Order via WhatsApp<small>Chat langsung untuk pemesanan</small></span>
+    </a>
+    <a class="community-choice" href="https://discord.gg/j24z23FMy8" target="_blank" rel="noopener noreferrer">
+      <span class="community-choice-icon dc">🎮</span><span>Order via Discord<small>Hubungi tim lewat komunitas Discord</small></span>
+    </a>
+  </div>
+  <button class="community-float-trigger" type="button" aria-expanded="false" aria-controls="communityFloatPanel" id="communityFloatTrigger">🛒 Order Sekarang <span aria-hidden="true">⌃</span></button>
+</div>
+
+<script>
+/* Small, dependency-free reveal animations; content remains visible if JS is unavailable. */
+(function(){
+  document.documentElement.classList.add('motion-ready');
+  var selectors=['main section','section',' .hero',' .hero-section',' .page-hero',' .service-card',' .product-card',' .feature-card',' .testimonial-card',' .package-card',' .pricing-card',' .contact-card',' .card',' .section-title'];
+  var nodes=[];
+  selectors.forEach(function(sel){document.querySelectorAll(sel.trim()).forEach(function(el){if(!nodes.includes(el))nodes.push(el);});});
+  nodes.forEach(function(el){if(el.closest('header'))return;el.classList.add('motion-reveal');});
+  if(!('IntersectionObserver' in window)){nodes.forEach(function(el){el.classList.add('is-visible')});return;}
+  var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}});},{threshold:.08,rootMargin:'0px 0px -35px 0px'});
+  nodes.forEach(function(el){observer.observe(el)});
+  window.addEventListener('pageshow',function(){document.querySelectorAll('.hero,.hero-section,.page-hero').forEach(function(el){el.style.animationPlayState='running'});});
+})();
+</script>
+
+<script>
+/* Decorative background only: never captures clicks, so dropdowns remain usable. */
+(() => {
+  const canvas = document.getElementById('fa-particle-bg');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d', { alpha: true });
+  if (!ctx) return;
+  let w = 0, h = 0, particles = [], raf = 0;
+  const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const colors = ['245,189,24', '96,165,250', '220,230,245'];
+  function resize() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.6);
+    w = window.innerWidth; h = window.innerHeight;
+    canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const count = Math.max(24, Math.min(70, Math.floor((w * h) / 19000)));
+    particles = Array.from({length: count}, () => ({
+      x: Math.random()*w, y: Math.random()*h,
+      vx: (Math.random()-.5)*.34, vy: (Math.random()-.5)*.34,
+      r: Math.random()*1.7+.65, c: colors[Math.random() < .62 ? 0 : (Math.random() < .65 ? 1 : 2)],
+      phase: Math.random()*Math.PI*2
+    }));
+  }
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    const linkDistance = Math.min(135, Math.max(85, w/10));
+    for (let i=0; i<particles.length; i++) {
+      const p = particles[i];
+      if (!reduced) {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < -8) p.x = w+8; if (p.x > w+8) p.x = -8;
+        if (p.y < -8) p.y = h+8; if (p.y > h+8) p.y = -8;
+      }
+      const alpha = .42 + (Math.sin((performance.now()/1200)+p.phase)+1)*.16;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${p.c},${alpha})`; ctx.fill();
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r*3.8, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${p.c},.045)`; ctx.fill();
+      for (let j=i+1; j<particles.length; j++) {
+        const q=particles[j], dx=p.x-q.x, dy=p.y-q.y, dist=Math.hypot(dx,dy);
+        if (dist < linkDistance) {
+          ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(q.x,q.y);
+          ctx.strokeStyle = `rgba(245,189,24,${(1-dist/linkDistance)*.13})`;
+          ctx.lineWidth=.7; ctx.stroke();
+        }
+      }
+    }
+    if (!reduced) raf = requestAnimationFrame(draw);
+  }
+  resize();
+  draw();
+  window.addEventListener('resize', resize, {passive:true});
+  if (reduced) return;
+})();
+</script>
+
+<script id="order-choice-script">
+(function(){
+  const trigger=document.getElementById('communityFloatTrigger');
+  const panel=document.getElementById('communityFloatPanel');
+  if(!trigger||!panel)return;
+  function setOpen(open){panel.classList.toggle('is-open',open);trigger.setAttribute('aria-expanded',String(open));const arrow=trigger.querySelector('span');if(arrow)arrow.textContent=open?'⌄':'⌃';}
+  trigger.addEventListener('click',function(){setOpen(trigger.getAttribute('aria-expanded')!=='true');});
+  document.querySelectorAll('header a.btn-nav, header a.order').forEach(function(link){
+    if(!/Order Sekarang/i.test(link.textContent))return;
+    link.setAttribute('href','#');link.setAttribute('aria-haspopup','true');link.setAttribute('aria-controls','communityFloatPanel');
+    link.addEventListener('click',function(event){event.preventDefault();setOpen(!panel.classList.contains('is-open'));});
+  });
+  document.addEventListener('click',function(event){if(!event.target.closest('.community-float-wrap')&&!event.target.closest('header a.btn-nav')&&!event.target.closest('header a.order'))setOpen(false);});
+  document.addEventListener('keydown',function(event){if(event.key==='Escape')setOpen(false);});
+})();
+</script>
+<script id="mobile-menu-script">(function(){document.querySelectorAll('header').forEach(function(header){var button=header.querySelector('.mobile-menu-toggle');var nav=header.querySelector('nav');if(!button||!nav)return;button.addEventListener('click',function(){var open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));button.setAttribute('aria-label',open?'Tutup menu navigasi':'Buka menu navigasi');nav.classList.toggle('mobile-menu-open',open);});nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(event){if(link.classList.contains('nav-product')&&window.matchMedia('(max-width: 700px)').matches){var drop=link.closest('.nav-dropdown');if(drop){var opening=!drop.classList.contains('mobile-dropdown-open');if(opening){event.preventDefault();drop.classList.add('mobile-dropdown-open');link.setAttribute('aria-expanded','true');return;}drop.classList.remove('mobile-dropdown-open');link.setAttribute('aria-expanded','false');}}button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Buka menu navigasi');nav.classList.remove('mobile-menu-open');});});});})();</script></body>
+</html>
