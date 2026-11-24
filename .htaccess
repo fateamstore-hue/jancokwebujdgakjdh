@@ -1,0 +1,30 @@
+# Faqih Al Store - Clean URL configuration (Apache)
+Options -MultiViews
+DirectoryIndex index.html
+RewriteEngine On
+
+# Redirect legacy .html URLs to clean URLs
+RewriteRule ^index\.html$ / [R=301,L,NC]
+RewriteRule ^hosting\.html$ /hosting/ [R=301,L,NC]
+RewriteRule ^vps\.html$ /vps/ [R=301,L,NC]
+RewriteRule ^web-hosting\.html$ /web-hosting/ [R=301,L,NC]
+RewriteRule ^build[ -]server\.html$ /build-server/ [R=301,L,NC]
+RewriteRule ^ddos-protection\.html$ /ddos-protection/ [R=301,L,NC]
+RewriteRule ^testimoni\.html$ /testimoni/ [R=301,L,NC]
+RewriteRule ^kontak\.html$ /kontak/ [R=301,L,NC]
+RewriteRule ^tos\.html$ /tos/ [R=301,L,NC]
+RewriteRule ^bantuan\.html$ /bantuan/ [R=301,L,NC]
+RewriteRule ^developer\.html$ /developer/ [R=301,L,NC]
+
+# Clean URL routes -> existing HTML files
+RewriteRule ^$ index.html [L]
+RewriteRule ^hosting/?$ hosting.html [L,NC]
+RewriteRule ^vps/?$ vps.html [L,NC]
+RewriteRule ^web-hosting/?$ web-hosting.html [L,NC]
+RewriteRule ^build-server/?$ "build server.html" [L,NC]
+RewriteRule ^ddos-protection/?$ ddos-protection.html [L,NC]
+RewriteRule ^testimoni/?$ testimoni.html [L,NC]
+RewriteRule ^kontak/?$ kontak.html [L,NC]
+RewriteRule ^tos/?$ tos.html [L,NC]
+RewriteRule ^bantuan/?$ bantuan.html [L,NC]
+RewriteRule ^developer/?$ developer.html [L,NC]
